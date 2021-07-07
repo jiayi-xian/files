@@ -1,0 +1,63 @@
+\usepackage[utf8]{inputenc}
+%\usepackage[UTF8]{ctex}
+\usepackage[text={6in,9.5in}]{geometry}
+\addtolength{\oddsidemargin}{-0.3in}
+\addtolength{\marginparwidth}{0.3in}
+
+\usepackage{amsmath, amsfonts,amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{bookmark}
+\usepackage{enumitem}
+\usepackage{graphics}
+\usepackage{todonotes}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{bm}
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage[english]{babel}
+\usepackage{xcolor}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\usetikzlibrary{positioning, arrows, shapes.geometric}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{setting}[theorem]{Setting}
+\newtheorem{statement}[theorem]{Statement}
+
+\newcommand{\ceil}[1]{{\lceil#1\rceil}}
+\newcommand{\floor}[1]{{\lfloor#1\rfloor}}
+\newcommand{\p}{\mathbb{P}}
+\newcommand{\cc}{\textrm{cc}}
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{./}{#1.pdf_tex}
+}
+
+
+\DeclareMathOperator*\E{\mathbb{E}}
+\DeclareMathOperator*\D{\mathbb{D}}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\def\DEBUG{1}
+\ifdefined\DEBUG
+	
+	\def\rem#1{{\marginpar{\raggedright\scriptsize #1}}}
+	
+	\newcommand{\remove}[1]{{\color{lightgray} #1}}
+	
+\else
+	
+	\newcommand{\remove}[1]{}
+	
+\fi

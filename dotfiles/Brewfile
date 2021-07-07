@@ -1,0 +1,20 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core", "https://mirrors.ustc.edu.cn/homebrew-core.git"
+tap "yunia/python2"
+brew "git"
+brew "mackup"
+brew "mas"
+brew "node"
+brew "thefuck"
+brew "vim"
+brew "wget"
+cask "font-iosevka"
+cask "skim"
+mas "-•-", id: 1533706044
+mas "Keynote", id: 409183694
+mas "MarginNote 3", id: 1423522373
+mas "MiniNote", id: 492486856
+mas "MiniPlay", id: 936243210
+mas "SnippetsLab", id: 1006087419
